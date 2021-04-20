@@ -69,8 +69,8 @@ async function getirDepremler() {
 // 10 saniyede 1 islem yapma
 // setInterval(getirDepremler, 10000);
 
-app.get("/", function (req, res) {
-    res.render("index.ejs");
+app.get("/api", function (req, res) {
+    res.render("index.js");
 });
 
 /* Api Sayfasi */
