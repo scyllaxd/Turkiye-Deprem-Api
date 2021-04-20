@@ -70,7 +70,7 @@ async function getirDepremler() {
 // setInterval(getirDepremler, 10000);
 
 app.get("/", function (req, res) {
-    res.render("/api");
+    res.render("index.ejs");
 
 /* Api Sayfasi */
 app.get('/api', function (req, res) {
