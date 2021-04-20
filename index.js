@@ -71,6 +71,7 @@ async function getirDepremler() {
 
 app.get("/", function (req, res) {
     res.render("index.ejs");
+});
 
 /* Api Sayfasi */
 app.get('/api', function (req, res) {
