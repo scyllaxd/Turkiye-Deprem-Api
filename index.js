@@ -69,8 +69,11 @@ async function getirDepremler() {
 // 10 saniyede 1 islem yapma
 // setInterval(getirDepremler, 10000);
 
+app.get("/", function (req, res) {
+    res.render("/api");
+
 /* Api Sayfasi */
-app.get('/', function (req, res) {
+app.get('/api', function (req, res) {
     var depremler = [];
     request("http://www.koeri.boun.edu.tr/scripts/lst0.asp", (error, response, html) => {
         if (!error && response.statusCode == 200) {
